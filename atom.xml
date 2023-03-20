@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-20T07:22:00.614Z</updated>
+  <updated>2023-03-20T07:25:08.840Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>技术随想</title>
-    <link href="http://example.com/2023/03/20/%E6%8A%80%E6%9C%AF%E9%9A%8F%E6%83%B3/"/>
-    <id>http://example.com/2023/03/20/%E6%8A%80%E6%9C%AF%E9%9A%8F%E6%83%B3/</id>
-    <published>2023-03-20T07:13:36.000Z</published>
-    <updated>2023-03-20T07:22:00.614Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="基于文本界面的房屋出租系统"><a href="#基于文本界面的房屋出租系统" class="headerlink" title="基于文本界面的房屋出租系统"></a>基于文本界面的房屋出租系统</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ 文章设计要求$ 实现基于文本界面的《房屋出租软件》。$ 能够实现对房屋信息的添加、修改和删除（用数组实现），并能够打印房屋明细表。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;基于文本界面的房屋出租系统&quot;&gt;&lt;a href=&quot;#基于文本界面的房屋出租系统&quot; class=&quot;headerlink&quot; title=&quot;基于文本界面的房屋出租系统&quot;&gt;&lt;/a&gt;基于文本界面的房屋出租系统&lt;/h2&gt;&lt;pre class=&quot;line-numbers lang</summary>
-      
-    
-    
-    
-    
-    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
