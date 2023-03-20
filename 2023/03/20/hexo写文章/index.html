@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>我的技术与生活——小站首页 | 杭&amp;博客</title>
+  <title>我的技术与生活——hexo写文章 | 杭&amp;博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/imgs/shortcut-icon.ico" type="image/x-icon">
 
@@ -18,7 +18,7 @@
   
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
-    document.title = `我的技术与生活——小站首页`
+    document.title = `我的技术与生活——hexo写文章`
   </script>
 <meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="杭&博客" type="application/atom+xml">
 </head>
@@ -349,48 +349,180 @@
 </div></div>
       <div id="main-container" class="main-container">
 
-    
 
-<div class="index">
-  <div class="index-left">
-    
-      <div class="index-article">
-        <img class="index-article--cover" src="/imgs/default-cover.webp" alt="">
-        <div class="index-article--content">
-          <a href="/2023/03/20/hexo%E5%86%99%E6%96%87%E7%AB%A0/">hexo写文章 </a>
-          <div>
-            
+  <style>
+pre::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  background-color:#F5F5F5;
+}
+/*定义滚动条轨道
+内阴影+圆角*/
+pre::-webkit-scrollbar-track {
+  background-color:#F5F5F5;
+}
+/*定义滑块
+内阴影+圆角*/
+pre::-webkit-scrollbar-thumb {
+  background-color: rgb(69, 83, 100);
+}
+
+pre:active {
+  background-color: rgb(81, 95, 116);
+}
+</style>
+
+<div class="article-container">
+  <div class="article">
+    <h1 class="article-title">hexo写文章</h1>
+    <div class="article-info">
+      <div class="article-info--item">
+        <div class="article-info--info">
+          
+          <div class="article-info--categories">
+            <span>分类：</span>
             
           </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
-  </div>
-  <div class="index-center">
-    
-      <div class="index-article">
-        <img class="index-article--cover" src="/imgs/default-cover.webp" alt="">
-        <div class="index-article--content">
-          <a href="/2023/01/12/hello-world/">Hello World </a>
-          <div>
-            
+          
+          
+          <div class="article-info--tags">
+            <span>标签：</span>
             
           </div>
-          <div class="bg"></div>
+          
+          <p class="article-info--date">日期：2023-03-20 16:10:53</p>
         </div>
+        <img src="/imgs/default-cover.webp" alt="" class="article-cover">
       </div>
+    </div>
+    <article class="article-content">
+      <h2 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h2><p>这个使用—包括起来的内容称之为Front-matter，即前置信息，用于给 Hexo 渲染该 md 文档，除了这三项，还有很多的配置项可以自己添加：</p>
+<h4 id="配置项说明"><a href="#配置项说明" class="headerlink" title="配置项说明"></a>配置项说明</h4><table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>网页文章标题</td>
+</tr>
+<tr>
+<td>date</td>
+<td>文章创建如期</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>文章评论功能是否启动</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>文章标签</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>文章分类</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>文章关键字</td>
+</tr>
+</tbody></table>
+<p>然后使用markdown语法来写自己的文章。如果对这个语法有什么不懂的地方，可以自行查找。</p>
+<h4 id="生成文章"><a href="#生成文章" class="headerlink" title="生成文章"></a>生成文章</h4><p>文章写好之后，首先要清除旧的数据：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这个命令会清除掉之前生成的网页，即站点根目录下的public文件夹：</p>
+<p><img src="C:\Users\如歌的岁月\AppData\Roaming\Typora\typora-user-images\image-20230320155004487.png" alt="image-20230320155004487"></p>
+<p>然后使用如下命令生成新的页面：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这个命令会将<code>source</code>文件夹下所有的md文件进行渲染，生成HTML页面，存放在<code>public</code>文件夹下：</p>
+<p><img src="C:\Users\如歌的岁月\AppData\Roaming\Typora\typora-user-images\image-20230320155122272.png" alt="image-20230320155122272"></p>
+<p>特别提醒！ 每次修改文章后，都要执行这两条命令，清除掉旧的数据，然后重新生成页面。</p>
+<h4 id="预览文章"><a href="#预览文章" class="headerlink" title="预览文章"></a>预览文章</h4><p>重新生成页面后，我们可以在本地开启<a target="_blank" rel="noopener" href="https://cloud.tencent.com/product/cvm?from=10680">服务器</a>，预览一下文章是否满意：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>好啦，今天的教程就到这儿，快去上手试试吧~</p>
+
+    </article>
+    
+    <div class="read-nums">
+      <!-- id 将作为查询条件 -->
+      <span id="2023/03/20/hexo写文章/" class="leancloud_visitors" data-flag-title="Your Article Title">
+        <em class="post-meta-item-text">浏览量</em>
+        <i class="leancloud-visitors-count"></i>
+      </span>
+    </div>
+    <div class="comments-intro">
+      <h2>评论区</h2>
+      <p>欢迎你留下宝贵的意见，昵称输入QQ号会显示QQ头像哦~</p>
+    </div>
+    <div id="vcomments" class="vcomments"></div>
     
   </div>
-  <div class="index-right">
-    <div class="index-right-wrapper">
+  <div class="article-catelogue">
+    <div class="article-catelogue--wrapper">
+      <div class="catelogue catelogue-1">
+        <h3>目录</h3>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Front-matter"><span class="toc-number">1.</span> <span class="toc-text">Front-matter</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E9%A1%B9%E8%AF%B4%E6%98%8E"><span class="toc-number">1.0.1.</span> <span class="toc-text">配置项说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E6%96%87%E7%AB%A0"><span class="toc-number">1.0.2.</span> <span class="toc-text">生成文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%84%E8%A7%88%E6%96%87%E7%AB%A0"><span class="toc-number">1.0.3.</span> <span class="toc-text">预览文章</span></a></li></ol></li></ol></li></ol>
+      </div>
       
+        <div class="catelogue catelogue-2">
+           
+          
+            <p>
+              <span>下一篇</span>
+              <a href="/2023/01/12/hello-world/">Hello World</a>
+            </p>
+          
+        </div>
       
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">2023年03月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">2023年01月</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 </div>
- 
+
+<script src="/js/prism.js"></script>
+
+<script>
+  // var定义，避免pjax重新进来造成的重复声明错误
+  var config = JSON.parse('{"enable":true,"appId":"Pf8zCXGEH1qsprnWfikVVujL-gzGzoHsz","appKey":"qOqoiUHhH1TGtLRUYURkLRQX","placeholder":"请留下你宝贵的意见吧~","meta":["nick"],"recordIP":true,"visitor":true,"enableQQ":true}')
+  new Valine({
+    el: '#vcomments',
+    appId: config.appId,
+    appKey: config.appKey,
+    placeholder: config.placeholder,
+    meta: config.meta,
+    recordIP: config.recordIP,
+    visitor: config.visitor,
+    enableQQ: config.enableQQ,
+    path: '2023/03/20/hexo写文章/'
+  })
+</script>
+
+
+<script>
+  $(document).on('pjax:complete', function() {
+    const tocs = document.querySelector('.toc')
+    const links = tocs ? tocs.querySelectorAll('a') : []
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        const href = decodeURIComponent(a.href)
+        href.search(/#(.*)/)
+        const id = RegExp.$1
+        const target = document.querySelector('#' + id)
+        const top = target.offsetTop
+        document.documentElement.scrollTo({
+          top: top - 100,
+          behavior: 'smooth'
+        })
+        e.preventDefault()
+      })
+    })
+  })
+</script> 
+
 </div>
       <div class="main-right-wrapper"><div class="main-right">
   <div class="main-right--board">
