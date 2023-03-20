@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-20T07:25:08.840Z</updated>
+  <updated>2023-03-20T08:25:36.015Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo写文章</title>
+    <link href="http://example.com/2023/03/20/hexo%E5%86%99%E6%96%87%E7%AB%A0/"/>
+    <id>http://example.com/2023/03/20/hexo%E5%86%99%E6%96%87%E7%AB%A0/</id>
+    <published>2023-03-20T08:10:53.000Z</published>
+    <updated>2023-03-20T08:25:36.015Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h2><p>这个使用—包括起来的内容称之为Front-matter，即前置信息，用于给 Hexo 渲染该 md 文档，除了这三项，还有很多的配置项可以自己添加：</p><h4 id="配置项说明"><a href="#配置项说明" class="headerlink" title="配置项说明"></a>配置项说明</h4><table><thead><tr><th>配置项</th><th>意义</th></tr></thead><tbody><tr><td>title</td><td>网页文章标题</td></tr><tr><td>date</td><td>文章创建如期</td></tr><tr><td>comments</td><td>文章评论功能是否启动</td></tr><tr><td>tags</td><td>文章标签</td></tr><tr><td>categories</td><td>文章分类</td></tr><tr><td>keywords</td><td>文章关键字</td></tr></tbody></table><p>然后使用markdown语法来写自己的文章。如果对这个语法有什么不懂的地方，可以自行查找。</p><h4 id="生成文章"><a href="#生成文章" class="headerlink" title="生成文章"></a>生成文章</h4><p>文章写好之后，首先要清除旧的数据：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这个命令会清除掉之前生成的网页，即站点根目录下的public文件夹：</p><p>然后使用如下命令生成新的页面：</p><pre class="line-numbers language-none"><code class="language-none">hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这个命令会将<code>source</code>文件夹下所有的md文件进行渲染，生成HTML页面，存放在<code>public</code>文件夹下：</p><p>特别提醒！ 每次修改文章后，都要执行这两条命令，清除掉旧的数据，然后重新生成页面。</p><h4 id="预览文章"><a href="#预览文章" class="headerlink" title="预览文章"></a>预览文章</h4><p>重新生成页面后，我们可以在本地开启，预览一下文章是否满意：</p><pre class="line-numbers language-none"><code class="language-none">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>好啦，今天的教程就到这儿，快去上手试试吧~</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Front-matter&quot;&gt;&lt;a href=&quot;#Front-matter&quot; class=&quot;headerlink&quot; title=&quot;Front-matter&quot;&gt;&lt;/a&gt;Front-matter&lt;/h2&gt;&lt;p&gt;这个使用—包括起来的内容称之为Front-matter，即前</summary>
+      
+    
+    
+    
+    
+    <category term="hexo写文章" scheme="http://example.com/tags/hexo%E5%86%99%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
