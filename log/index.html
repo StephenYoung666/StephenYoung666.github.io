@@ -196,7 +196,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/01/12/hello-world/"},{"title":"如何写文章","path":"2023/03/20/如何写文章/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/01/12/hello-world/"},{"title":"删除文章","path":"2023/03/20/删除文章/"},{"title":"如何使用hexo写文章","path":"2023/03/20/如何写文章/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -267,7 +267,7 @@
         </a>
         <a href="/tags">
           <div>
-            <span>1</span>
+            <span>2</span>
             <span>标签</span>
           </div>
         </a>
@@ -330,7 +330,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>2 篇</span>
+        <span>3 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
