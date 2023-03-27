@@ -24,7 +24,7 @@
 
   
 
-  <title>删除文章 | 如歌的岁月</title>
+  <title>修改主题 | 如歌的岁月</title>
 
   
 
@@ -98,11 +98,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">删除文章</h1>
+          <h1 class="title-wrap">修改主题</h1>
           <h2 class="title-sub-wrap">
             <strong>showtime杭</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2023-03-20T08:40:47.000Z" itemprop="datePublished">2023-03-20</time>
+            <time  class="article-date" datetime="2023-03-27T08:36:15.000Z" itemprop="datePublished">2023-03-27</time>
           </h2>
           
           
@@ -110,8 +110,6 @@
   
 </ul>
           <ul class="wrap-list dark">
-  
-    <li><a href="/tags/%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4%E6%96%87%E7%AB%A0/">🏷️ 如何删除文章</a></li>
   
 </ul>
         </div>
@@ -135,38 +133,44 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><p>目前未找到删除文章的指令，可以到目录/source/_posts下删除相应的文章，然后重新生成部署即可</p>
-<p>到目录/source/_posts下删除相应的文章</p>
-<pre class="line-numbers language-none"><code class="language-none">$ hexo g
-$ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+        <h4 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h4><ol>
+<li><p>进入Hexo官网<a href="https://link.zhihu.com/?target=https://hexo.io/themes/">https://hexo.io/themes/</a> 选择喜欢的主题</p>
+</li>
+<li><p>在<strong>hexo</strong>目录下的<strong>themes</strong>文件夹下打开<strong>git bash</strong>，输入以下命令，下载主题。</p>
+</li>
+<li><p>配置_config.yml文件</p>
+<p>打开<strong>hexo</strong>目录下的**_config.yml<strong>文件，修改</strong>theme**，注意冒号之后的空格</p>
+<p>因为刚刚已经下载过主题，打开<em><strong>hexo目录下的themes文件夹</strong></em>会看到新生成的主题文件夹，将他的名字复制到_config.yml里并保存，如图（ps：注意hexo和themes的主题文件夹里各有一个_config.yml文件，不要搞混了，后续增加各种效果还需要用到的）</p>
+</li>
+<li><p>在hexo目录下，打开git bash，输入以下命令</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo clean
+hexo g
+hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>清除缓存，生成静态文件，查看效果，感觉效果满意就可以部署到GitHub上了</p>
+</li>
+<li><p>在hexo目录下，打开git bash，输入以下命令</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo clean
+hexo g -d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>清除缓存，将内容部署到GitHub，配置完成，打开网址查看效果</p>
+</li>
+</ol>
+
       </section>
 
       
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-    <div class="card-text">
-      
-        <a href="/2023/03/27/%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">修改主题</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2023/03/20/%E5%A6%82%E4%BD%95%E5%86%99%E6%96%87%E7%AB%A0/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">如何使用hexo写文章</h2>
+        <a href="/2023/03/20/%E5%88%A0%E9%99%A4%E6%96%87%E7%AB%A0/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">删除文章</h2>
         </a>
       
       <div class="card-text--row">Older</div>

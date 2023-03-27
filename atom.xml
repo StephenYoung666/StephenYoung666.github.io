@@ -6,7 +6,7 @@
   <link href="http://stephenyoung666.github.io/atom.xml" rel="self"/>
   
   <link href="http://stephenyoung666.github.io/"/>
-  <updated>2023-03-20T08:41:25.954Z</updated>
+  <updated>2023-03-27T08:36:46.522Z</updated>
   <id>http://stephenyoung666.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>修改主题</title>
+    <link href="http://stephenyoung666.github.io/2023/03/27/%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98/"/>
+    <id>http://stephenyoung666.github.io/2023/03/27/%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98/</id>
+    <published>2023-03-27T08:36:15.000Z</published>
+    <updated>2023-03-27T08:36:46.522Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h4><ol><li><p>进入Hexo官网<a href="https://link.zhihu.com/?target=https://hexo.io/themes/">https://hexo.io/themes/</a> 选择喜欢的主题</p></li><li><p>在<strong>hexo</strong>目录下的<strong>themes</strong>文件夹下打开<strong>git bash</strong>，输入以下命令，下载主题。</p></li><li><p>配置_config.yml文件</p><p>打开<strong>hexo</strong>目录下的**_config.yml<strong>文件，修改</strong>theme**，注意冒号之后的空格</p><p>因为刚刚已经下载过主题，打开<em><strong>hexo目录下的themes文件夹</strong></em>会看到新生成的主题文件夹，将他的名字复制到_config.yml里并保存，如图（ps：注意hexo和themes的主题文件夹里各有一个_config.yml文件，不要搞混了，后续增加各种效果还需要用到的）</p></li><li><p>在hexo目录下，打开git bash，输入以下命令</p><pre class="line-numbers language-none"><code class="language-none">hexo cleanhexo ghexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>清除缓存，生成静态文件，查看效果，感觉效果满意就可以部署到GitHub上了</p></li><li><p>在hexo目录下，打开git bash，输入以下命令</p><pre class="line-numbers language-none"><code class="language-none">hexo cleanhexo g -d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>清除缓存，将内容部署到GitHub，配置完成，打开网址查看效果</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;具体步骤&quot;&gt;&lt;a href=&quot;#具体步骤&quot; class=&quot;headerlink&quot; title=&quot;具体步骤&quot;&gt;&lt;/a&gt;具体步骤&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;进入Hexo官网&lt;a href=&quot;https://link.zhihu.com/?target=https</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>删除文章</title>
